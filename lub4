@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+int main () {
+float a;
+float b;
+float P;
+плавает;
+система ("chcp 1251");
+система ("cls");
+printf ("ввести стороны");
+scanf_s ("% f", & a);
+scanf_s ("% f", & b);
+S = а * Ь;
+Р = 2 * (а + б);
+printf ("Площадь равна% f", S);
+printf ("Периметр равен% f", P);
+}
