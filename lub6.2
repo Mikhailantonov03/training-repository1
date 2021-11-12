@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+     int a,b,c,x;
+     printf("Введите значение а: ");
+     scanf("%d",&a);
+     printf("Введите значение b: ");
+     scanf("%d",&b);
+     printf("Введите значение c: "); 
+     scanf("%d",&c);
+     x=c;
+     c=b;
+     b=a;
+     a=x;
+     printf("а: %d\n", a);
+     printf("b: %d\n", b);
+     printf("с: %d\n", c);
+    return 0;
+}
