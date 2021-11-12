@@ -1,0 +1,30 @@
+#include <stdio.h>
+	#include <math.h>
+	#include <stdlib.h>
+	int main() {
+	float A,B,C,AC,BC,pr;
+	system("chcp 1251");
+	system("cls");
+	printf("Введите координаты: ");
+	
+
+	printf("Введите коррдинаты А : ");
+	scanf("%f", &A);
+	printf("Введите коррдинаты C : ");
+	scanf("%f", &C);
+	printf("Введите коррдинаты B : ");
+	scanf("%f", &B);
+	if ((C<A) || (C>B)){
+	    printf("С не находится внутри отрезка AB");
+	}
+	else {
+	AC=abs(A-C);
+	    printf("Расстояние AC равно  %f  ", AC);
+	BC=abs(B-C);
+	    printf("Расстояние BC равно  %f  ", BC);
+	    pr=AC*BC;
+	    printf("произведение АС и ВС %f  ", pr);
+	}
+	return 0;
+	}
+
