@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+float A,B,C,AC,BC,sum;
+system("chcp 1251");
+system("cls");
+printf("Введите координаты: ");
+
+
+printf("Введите коррдинаты А : ");
+scanf("%f", &A);
+printf("Введите коррдинаты C : ");
+scanf("%f", &B);
+printf("Введите коррдинаты B : ");
+scanf("%f", &C);
+AC=abs(A-C);
+    printf("Расстояние равно AC %f  ", AC);
+BC=abs(B-C);
+    printf("Расстояние равно BC %f  ", BC);
+    sum=AC+BC;
+    printf("сумма АС и ВС %f  ", sum);
+}
