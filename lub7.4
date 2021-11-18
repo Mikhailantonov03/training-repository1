@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    
+setlocale(LC_ALL, "Rus");
+    float v1,v2,t,S;
+     printf("Введите скорость первого автомобиля : ");
+    scanf("%f",&v1);
+    printf("Введите скорость второго автомобиля : ");
+    scanf("%f",&v2);
+    printf("Введите время : ");
+    scanf("%f",&t);
+    S=v1*t+v2*t;
+    printf("Расстояние между автомобилями через t часов равно : %f ",S);
+    return 0;
+}
