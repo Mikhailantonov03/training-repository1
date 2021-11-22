@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    int a,b,c;
+    setlocale(LC_ALL, "Rus");
+    printf("Введите число А : ");
+    scanf("%d",&a);
+    printf("Введите число B : ");
+    scanf("%d",&b);
+    c=a/b;
+    a=a-(c*b);
+    
+    printf("Ответ равен %d ",a);
+}
