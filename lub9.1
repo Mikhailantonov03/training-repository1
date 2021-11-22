@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    int x;
+    setlocale(LC_ALL, "Rus");
+    printf("Введите число x : ");
+    scanf("%d",&x);
+    x=x%60;
+    printf("Ответ равен %d ",x);
+}
