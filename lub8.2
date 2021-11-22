@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    int a,b;
+    setlocale(LC_ALL, "Rus");
+    printf("Введите число А : ");
+    scanf("%d",&a);
+    printf("Введите число B : ");
+    scanf("%d",&b);
+    a=a/b;
+    printf("Максимальное число отрезков которое может лежать равно %d ",a);
+}
