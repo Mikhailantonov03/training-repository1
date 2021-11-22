@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    int x,x1,x2;
+    setlocale(LC_ALL, "Rus");
+    printf("Введите трехзначное число x : ");
+    scanf("%d",&x);
+    x1=(x %1000)/100;
+    x2=(x %100)/10;
+    x=x%10;
+    printf("Ответ равен %d%d%d ",x2,x,x1);
+}
