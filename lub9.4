@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+  int a,b,c,x,y;
+  printf("Введите значение A : ");
+  scanf("%d",&a);
+  printf("Введите значение B : ");
+  scanf("%d",&b);
+   printf("Введите значение C : ");
+  scanf("%d",&c);
+  x=(a*b)/(c*c);
+ y= a*b-(x*c*c);
+ printf("Количество квадратов : %d ",x);
+ printf("Оставшееся пространство : %d ",y);
+}
