@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int A,B,C;
+    printf("Введите число A : ");
+    scanf("%d",&A);
+    printf("Введите число B : ");
+    scanf("%d",&B);
+    printf("Введите число C : ");
+    scanf("%d",&C);
+     if (pow(A,2)+pow(B,2)==pow(C,2))
+      printf("Треугольник прямоугольный,и в нем гипотенуза С");
+      else if (pow(C,2)+pow(A,2)==pow(B,2))
+       printf("Треугольник прямоугольный,и в нем гипотенуза В");
+        else if (pow(C,2)+pow(B,2)==pow(A,2))
+       printf("Треугольник прямоугольный,и в нем гипотенуза А");
+       else 
+     printf("Треугольник не прямоугольный");  
+      
+}
