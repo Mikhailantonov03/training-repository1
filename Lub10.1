@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int A,B;
+    printf("Введите число А : ");
+    scanf("%d",&A);
+    printf("Введите число В : ");
+    scanf("%d",&B);
+    if (A>2 && B<=3)
+    printf("Высказывание справедливо");
+    else
+    printf("Высказывание не справедливо");
+}
