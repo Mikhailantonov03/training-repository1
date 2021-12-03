@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int A,B,C,min,sum;
+    printf("Введите число A : ");
+    scanf("%d",&A);
+    printf("Введите число B : ");
+    scanf("%d",&B);
+    printf("Введите число C : ");
+    scanf("%d",&C);
+    sum=A+B+C;
+     if (C<A && C<B)
+     min=C;
+      else if (A<B && A<C)
+      min=A;
+     else if (B<A && B<C)
+      min=B;
+       sum=sum-min;
+     printf(" Сумма двух наибольших чисел равна  %d ",sum);
+      
+     
+}
