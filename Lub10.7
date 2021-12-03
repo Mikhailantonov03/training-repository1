@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int A,B,C;
+    printf("Введите число A : ");
+    scanf("%d",&A);
+    printf("Введите число B : ");
+    scanf("%d",&B);
+    printf("Введите число C : ");
+    scanf("%d",&C);
+     if (A+B<C)
+      printf("треугольник не существует");
+      else if  (B+C<A)
+      printf("треугольник не существует");
+       else if (A+C<B)
+     printf("Треугольник не существует");
+     else 
+     printf("Треугольник существует");
+     
+}
