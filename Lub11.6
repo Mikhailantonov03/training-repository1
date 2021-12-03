@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int X;
+    printf("Введите число : ");
+    scanf("%d",&X);
+     if ((X%2==0) && (X>1) && (X<100) )
+     printf("Четное двузначное число");
+     else if ((X%2!=0) && (X>1) && (X<100) )
+     printf("Нечетное двузначное число");
+     else if ((X%2==0) && (X>99) && (X<1000) )
+     printf("Четное трехзначное число");
+     else if ((X%2!=0) && (X>99) && (X<1000) )
+     printf("Нечетное трехзначное число");
+   
+}
