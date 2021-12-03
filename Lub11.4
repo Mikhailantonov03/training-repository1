@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int X,Y;
+    printf("Введите координату X : ");
+    scanf("%d",&X);
+    printf("Введите координату Y: ");
+    scanf("%d",&Y);
+     
+     if (X>0 && Y>0)
+      printf("Точка лежит в первой четверти");
+      else  if (X>0 && Y<0)
+      printf("Точка лежит в четвертой четверти");
+    else  if (X<0 && Y>0)
+      printf("Точка лежит во второй четверти");
+      else  if (X<0 && Y<0)
+      printf("Точка лежит в третьей четверти");
+}
