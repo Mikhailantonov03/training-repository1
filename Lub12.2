@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+int main() {
+    int n;
+    char c;
+    setlocale(LC_ALL, "Rus");
+    printf("Введите направление (W - запад, N - север, S - юг, E - Восток  ");
+    scanf("%c",&c);
+    printf ("Введите команду (0 - продолжать движение, 1 поворот налево, -1 поворот направо  ");
+    scanf("%d",&n);
+    switch (c) {
+    case 'N':
+        switch (n) {
+        case 1:
+            c = 'W';
+            break;
+        case 0:
+            c = 'N';
+            break;
+        case -1:
+            c = 'E';
+            break;
+        }
+        break;
+    case 'B':
+        switch (n) {
+        case 1:
+            c = 'N';
+            break;
+        case 0:
+            c = 'E';
+            break;
+        case -1:
+            c = 'S';
+            break;
+        }
+    case 'S':
+        switch (n) {
+        case 1:
+            c = 'E';
+            break;
+        case 0:
+            c = 'S';
+            break;
+        case -1:
+            c = 'W';
+            break;
+        }
+        break;
+    case 'W':
+        switch (n) {
+        case 1:
+            c = 'S';
+            break;
+        case 0:
+            c = 'W';
+            break;
+        case -1:
+            c = 'N';
+            break;
+        }
+    }
+    printf("%c",c);
+    return 0;
+
+}
