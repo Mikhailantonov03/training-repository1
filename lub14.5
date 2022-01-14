@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int A,B;
+	printf("Введите целое положительное число A ");
+	scanf("%d",&A);
+	printf("Введите целое положительное число B ");
+	scanf("%d",&B);
+
+	while (A != 0 && B != 0)
+	{
+		if (A > B)
+		{
+			A = A % B;
+		}
+		else
+		{
+			B = B % A;
+		}
+	}
+
+printf("НОД = %d ",(A + B));
+}
