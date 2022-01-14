@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main()
+{
+    float A,r;
+    int N;
+  setlocale(LC_ALL, "RUS");
+	printf("Введите вещественное число A ");
+	scanf("%f",&A);
+	printf("Введите целое число N (N>0)");
+	scanf("%d",&N);
+	r = 1;
+
+	float Amin = 0;
+	float Apls = 0;
+
+	for (int i = 1; i <= N; i+=2)
+	{
+		Amin += pow(A, i);
+	}
+
+	for (int i = 2; i <= N; i += 2)
+	{
+		Apls += pow(A, i);
+	}
+
+
+	 printf("1 - A + A^2 - A^3 + . . . +- A^N =  %f",(float)(r - Amin + Apls));
+}
