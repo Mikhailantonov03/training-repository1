@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    float P;
+	int K = 0;
+	float S = 1000;
+
+	printf("Введите процент (P - вещественное число, 0 < P < 25) ");
+	scanf("%f",&P);
+
+	while (S <= 1100)
+	{
+		K++;
+		S += S * P / 100;
+	}
+	printf("Количество месяцев = %d \n",K);
+	printf("Итоговый размер вклада = %f ",S)  ;
+}
