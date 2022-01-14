@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main()
+{
+    setlocale(LC_ALL, "RUS");
+   printf("Введите целое число N (N>0)");
+	int N,r;
+	scanf("%d",&N);
+	r = 0;
+	printf("Нахождение квадрата числа по этапам...");
+
+	for (int i = 1; i <= (2 * N - 1); i += 2)
+	{
+		r += i;
+		printf("%d \n",r);
+	}
+}
