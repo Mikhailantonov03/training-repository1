@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+void poweraA3(float a, float *b)
+{
+ setlocale(LC_ALL, "Russian");
+*b=a*a*a;
+}
+int main(void)
+{
+int i;
+for(i=1;i<=5;++i){
+float a;
+printf("Введите число A:");
+scanf("%f", &a);
+float b;
+poweraA3(a, &b);
+printf("На выходе B= : %f\n",b);
+}
+return 0;
+}
