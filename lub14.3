@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+	int N;
+	printf("Введите целое число N (N>1)");
+	scanf("%d",&N);
+
+	int K = 0;
+	int sum = 0;
+
+	while (sum <= N) 
+	{
+		K++;
+		sum = sum + K;
+	}
+
+	printf("Наименьшее из целых чисел K, для которых сумма 1 + 2 + . . . + K больше или равна N = %d  \n ", K);
+	printf("Сумма = %d ",sum);
+}
