@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main()
+{
+    int A,B;
+    setlocale(LC_ALL, "Russian");
+   printf("Введите длину отрезка A ");
+	scanf("%d",&A);
+	printf("Введите длину отрезка B (B<A) ");
+	scanf("%d",&B);
+
+	while (A - B >= 0)
+	{
+		A = A - B;
+	}
+
+	printf("Длина незанятой части отрезка A = %d ",A);
+}
