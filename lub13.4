@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main()
+{
+float A,r;
+int N;
+setlocale(LC_ALL, "RUS");
+	printf("Введите вещественное число A ");
+	scanf("%f",&A);
+	printf("Введите целое число N (N>0)");
+	scanf("%d",&N);
+
+	float A2 = 1;
+	r = 1;
+
+	for (int i = 2; i <= N; i++)
+	{
+		A2 = A2 * A;
+		r = r + A2;
+	}
+	printf("Сумма 1 + A + A^2 + A^3 + . . . + A^N = %f ",r);
+}
