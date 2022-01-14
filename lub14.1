@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main()
+{
+int A, B;
+setlocale(LC_ALL, "Russian");
+	printf("Введите целое положительное число A ");
+	scanf("%d",&A);
+	printf("Введите целое положительное число B (B>A) ");
+	scanf("%d",&B);
+for (int i = B - 1; i > A; i--)
+	{
+		for (int j = 0; j < i; j++)
+		{
+			 printf("%d  ", i);
+		}
+		printf("\n");
+	}
+}
