@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main(void)
+{
+setlocale(LC_ALL, "RUS");
+int a[10];
+int d,n, i,N;
+printf("Введите размер массива N : ");
+scanf("%i",&n);
+printf("Введите первый член геометрической прогрессии A[0]: ");
+scanf("%i",&a[0]);
+printf("Введите знаменатель геометрической прогрессии D: ");
+scanf("%i",&d);
+N=1;
+for (i=1; i<n; ++i){
+N*=d;
+a[i]=a[0]*N;
+}
+for (i=0; i<n; ++i) printf("%i : %i\n",i,a[i]);
+return 0;
+}
