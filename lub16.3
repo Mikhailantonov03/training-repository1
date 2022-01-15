@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main(void)
+{
+int a[10];
+int n, i;
+setlocale(LC_ALL, "RUS");
+printf("Введите размер массива N: ");
+scanf("%d",&n);
+printf("Введите первый элемент массива A: ");
+scanf("%d",&a[0]);
+printf("Введите второй элемент массива B: ");
+scanf("%d",&a[1]);
+for (i=2; i<n; ++i){
+a[i]=0;
+int j;
+for (j=0; j<i; ++j) a[i] += a[j];
+ 
+}
+for (i=0; i<n; ++i) printf("%d : %d\n",i,a[i]);
+return 0;
+}
