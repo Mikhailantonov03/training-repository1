@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main(void)
+{
+ int a[10];
+ int n, i;
+ setlocale(LC_ALL, "RUS");
+ printf("Введите размер массива N: ");
+ scanf("%i",&n);
+ for (i=0; i<n; ++i){
+ printf("Вывод массива a[%i] : ",i+1);
+ scanf("%i",&a[i]);
+ }
+ for (i=0; i<n; i+=2) 
+ printf("Элементы с нечетными номерами в порядке возрастания номеров %i\n",a[i]);
+ for (i=n-(n%2)-1; i>=1; i-=2)
+ printf("Элементы с четными номерами в порядке убывания номеров %i\n",a[i]);
+ return 0
+ }
