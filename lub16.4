@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main(void)
+{
+ setlocale(LC_ALL, "RUS");
+int a[10];
+int n, i;
+printf("Введите размер массива N: ");
+scanf("%d",&n);
+for (i=0; i<n; ++i){
+printf("Вывод массива a[%d] : ",i+1);
+scanf("%d",&a[i]);
+}
+for (i=0; i<n/2+1; i+=2){
+printf("Преобразование %d\n",a[i]);
+if (i<n/2) printf("%d\n",a[i+1]);
+if (n-i-1>n/2) printf("%d\n",a[n-i-1]);
+if (n-i-2>n/2) printf("%d\n",a[n-i-2]);
+}
+return 0;
+}
