@@ -1,0 +1,47 @@
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import { createTheme } from '@mui/material/styles';
+import { grey } from '@mui/material/colors';
+import { borderRight, color } from '@mui/system';
+
+const bull = (
+    <Box
+      component="span"
+      sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+    >
+      •
+    </Box>
+  );
+  
+   
+ 
+const ItemReview= () => {
+
+
+    return (
+
+ 
+        <Card sx={{ minWidth: 275 }}>
+        <CardContent>
+           
+          <Typography variant="h5" component="div">
+          Спасибо организатору и руководителям за такую замечательную олимпиаду! Мне было интересно поучаствовать. Я думаю, что олимпиада будет еще набирать популярность среди учеников 9-11 классов...
+          </Typography>
+        </CardContent>
+        <Box display="flex" justifyContent="right"    >
+        <Button variant="contained" sx={{bgcolor:"#3c3c3c", ':hover': {bgcolor:'#606060'}, }}>Ответить</Button>
+
+        
+        <Button variant="contained" sx={{bgcolor:"#3c3c3c", ':hover': {bgcolor:'#606060'}}}>Подробнее</Button>
+        </Box>
+         
+      </Card>
+    );
+        
+};
+export default ItemReview;
